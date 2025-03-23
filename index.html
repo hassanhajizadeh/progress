@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css"/>
+    <title>Progress</title>
+</head>
+<body>
+    <div id="container">
+        <div id="left">
+            <div class="left-task">
+                <div class="circle" id="task1">1</div>
+                <div class="left-bar" id="task-bar1"></div>
+            </div>
+            <div class="left-task">
+                <div class="circle" id="task3">3</div>
+                <div class="left-bar" id="task-bar3"></div>
+            </div>
+            <div class="left-task">
+                <div class="circle" id="task5">5</div>
+                <div class="left-bar" id="task-bar5"></div>
+            </div>
+        </div>
+        <div id="middle">
+            <div class="circle active">S</div>
+            <div id="main-bar"></div>
+            <div class="circle" id="taskE">E</div>
+        </div>
+        <div id="right">
+            <div class="right-task">
+                <div class="circle" id="task2">2</div>
+                <div class="right-bar" id="task-bar2"></div>
+            </div>
+            <div class="right-task">
+                <div class="circle" id="task4">4</div>
+                <div class="right-bar" id="task-bar4"></div>
+            </div>
+        </div>
+    </div>
+    <div id="buttons">
+        <button class="btn" id="prev" onclick="prev()" disabled>prev</button>
+        <button class="btn" id="next" onclick="next()">next</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+*{
+    padding: 0px;
+    margin : 0px;
+    box-sizing: border-box;
+    transition: .3s ease-in-out all;
+}
+
+body{
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f6f7fb;
+
+}
+#container{
+    display: flex; 
+    align-items: center;
+    margin: 30px 10px;
+}
+
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border: 5px solid #e1e1e1;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+#middle{
+    position: relative;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;    
+}
+
+#main-bar{
+    position: absolute;
+    width: 5px;
+    height: 500px;
+    background-color: #e1e1e1;
+    border-top: 0px solid #3498db;
+    
+}
+
+#left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+    width: 120px;
+}
+
+.left-task{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.left-bar{
+    position: absolute;
+    height: 5px;
+    width: 140px;
+    background-color: #e1e1e1;
+}
+
+.left-bar-full{
+    border-right: 140px solid #3498db;
+}
+
+#right{
+    height: 300px;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.right-task{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.right-bar{
+    position: absolute;
+    width: 120px;
+    height: 5px;
+    left: -20px;
+    background-color: #e1e1e1;
+    z-index: -1;
+}
+
+.right-bar-full{
+    border-left: 140px solid #3498db;
+}
+
+.active{
+    border: 5px solid #3498db;
+}
+
+.btn{
+    border-radius: .4rem;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    font-size: 12pt;
+    margin: 0px 10px;
+    padding: 10px 25px;
+    text-transform: capitalize;
+    transition: .3 ease-in all;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #53baff;
+}
+
+.btn:active{
+    transform: scale(0.90);
+}
+
+button:disabled{
+    background-color: gray;
+    color: white;
+    pointer-events: none;
+}
