@@ -1,5 +1,5 @@
-Progress App 
+Smooth Progress App 
 
-created using html css js
+Created using HTML , CSS , JS
 
-<video controls src="Screencast from 03-24-2025 03:10:35 AM.webm" title="Title"></video>
+![alt text](<Screenshot from 2025-03-24 03-21-00.png>) ![alt text](<Screenshot from 2025-03-24 03-21-12.png>) ![alt text](<Screenshot from 2025-03-24 03-21-21.png>)
